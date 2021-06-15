@@ -746,7 +746,10 @@ justify-content: space-between;
 .check_input:checked + .check_box {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(./images/check.svg)
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .policy-link {
   color: var(--accent-color);
