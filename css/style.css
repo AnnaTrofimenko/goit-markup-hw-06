@@ -112,7 +112,8 @@ body {
   justify-content: center;
 }
 .menu-link {
-  display: block;
+  display: block; 
+  padding: 32px 0;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -131,6 +132,7 @@ body {
   line-height: 1.19;
   color: var(--accent-color);
   margin-right: 93px;
+  padding: 24px 0;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -384,6 +386,9 @@ body {
   justify-content: space-between;
 }
 .clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -519,6 +524,7 @@ justify-content: space-between;
   border-color: var(--accent-color);
   border-radius: 4px;
   padding: 0;
+  border: none;
 }
 .email-form-button-icon {
   margin-left: 10px;
@@ -713,28 +719,31 @@ justify-content: space-between;
   outline: none;
   border-color: var(--accent-color);
 }
-.modal-form-checkbox-policy {
-  font-weight: 400;
-  font-size: 14px;  
-  line-height: 1.71;
+.check {
+  display: block;
+  padding-left: 20px;
+  text-align: center;
   margin-bottom: 30px;
-  
 }
-.modal-form-checkbox-policy::before {
-  content: "";
-  display: inline-block;
+.check_input {
+  -webkit-appearance: none;
+  position: absolute;
+}
+.check_box {
+  margin-left: -20px;
+  position: absolute;
   width: 16px;
   height: 15px;
-  border: 1px solid #212121;
-  cursor: pointer;
-  vertical-align: middle;
-  margin-right:  8px;
-  background-color: var(--white-color);
-  background-image: url(./images/sprite.svg#icon-check);
+  border: 2px solid #212121;
+  border-radius: 2px;
 }
-.modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
-  border:var(--accent-color);
+.check_input:focus + .check_box{
+  border-color: var(--accent-color);
+}
+.check_input:checked + .check_box {
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
+  background-image: url(./images/check.svg)
 }
 .policy-link {
   color: var(--accent-color);
