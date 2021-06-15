@@ -736,6 +736,9 @@ justify-content: space-between;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
+  transition: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check_input:focus + .check_box{
   border-color: var(--accent-color);
@@ -771,6 +774,9 @@ justify-content: space-between;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  transition: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:focus {
   border-color: var(--accent-color);
